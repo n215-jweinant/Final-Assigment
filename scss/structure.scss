@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+
+}
+
+@font-face {
+  font-family: proxCondense;
+  src: url(fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+@font-face {
+  font-family: proxCondense-thin;
+  src: url(fonts/Proxima-Nova-Thin.otf);
+}
+
+.site-wrapper{
+max-width: $site-width;
+position: relative;
+min-height: 500px;
+background-color: $site-white;
+margin: 0  auto;
+
+}

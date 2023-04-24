@@ -1,0 +1,95 @@
+.contact {
+    width: 76.6%;
+    max-width: 980px;
+    margin: 0 auto;
+    .contact-header {
+        margin-top: 56px;
+        h2 {
+            border-bottom: 2px solid black;
+            font-family: proxCondense;
+            font-size: 18pt;
+            width: 159px   ;
+            text-transform: uppercase;
+            font-weight: bold;
+            white-space: nowrap;    } 
+    }
+    .contact-container {
+        display: flex;
+        margin: 50px auto 100px auto;
+        .map-info {
+            img {
+                width: 400px;
+                height: 442px;
+            }
+            p {
+                font-family: 'Gill Sans', 'Gill Sans MT', 'Lato', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 14pt;
+                font-weight: bold;
+                margin-top: 34px;
+            }
+        }
+        .contact-form {
+            margin-left: 50px;
+            input {
+                width: 100%;
+                height: 60px;
+                margin-bottom: 21px;
+                padding-left: 21px;
+                border: none;
+                background-color: $site-white;
+                font-size: 14pt;
+                font-weight: bold;
+                font-family: 'Gill Sans', 'Gill Sans MT', 'Lato', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            textarea {
+                width: 100%;
+                height: 199px;
+                margin-bottom: 20px;
+                padding-left: 21px;
+                padding-top: 20px;
+                border: none;
+                background-color: $site-white;;
+                font-size: 14pt;
+                font-weight: bold;
+                font-family: 'Gill Sans', 'Gill Sans MT', 'Lato', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            .contact-submit {
+                background-color: $site-blue;
+                color: $site-white;
+                display: flex;
+                border: none;
+                text-transform: uppercase;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 12pt;
+                font-weight: bold;
+                letter-spacing: -1px;
+                height: 40px;
+                width: 133px;
+                a {
+                    text-decoration: none;
+                    color: $site-white;
+                }
+               
+        
+                height: 60px;
+                width: 168px;
+                letter-spacing: 1px;
+                font-size: 14pt;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .contact {
+        justify-content: center;
+        .contact-container {
+            flex-direction: column;
+            .contact-form {
+                margin: 20px auto 0 auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.herotour{
+    max-width: 981px;
+    min-height: 200px;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(26, 26, 26, 0.6)), url(../img/tour/tours-header.jpg);
+    margin: 50px auto 0px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 50px;
+
+    h1{
+        max-width: 300px;
+        margin: 0 auto;
+        padding-top: 55px;
+        text-align: center;
+
+        font-family: proxCondense;
+        font-size: 60px;
+        color: $site-white;
+
+    }
+}

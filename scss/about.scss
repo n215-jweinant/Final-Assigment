@@ -1,0 +1,119 @@
+.about{
+    max-width: 980px;
+    margin: 90px auto 0px auto;
+    padding: 5px;
+
+
+    .about-top{
+
+        h1{
+            width: 171px;
+            border-bottom: black solid 2px;
+            font-size: 60px;
+            font-family:proxCondense-thin;
+        }
+
+        p{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 16px;
+            padding-bottom: 95px;
+        }
+    }
+
+
+
+
+
+    .about-bottom{
+        padding-bottom: 180px;
+
+        h3{
+            
+            font-family:proxCondense-thin;
+            font-size: 40px;
+            width: 300px;
+            border-bottom: black solid 2px;
+        }
+
+
+        p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 16px;
+        }
+
+
+
+
+        .client{
+            max-width: 676px;
+            min-height: 150px;
+            display: flex;
+            margin-bottom: 37px;
+
+            .client1{
+                min-width: 260px;
+                height: 150px;
+
+                background-image: url(../img/about-client-01.jpg);
+                background-size: cover;
+
+            }
+
+            .client2{
+                min-width: 260px;
+                height: 150px;
+
+                background-image: url(../img/about-client-02.jpg);
+                background-size: cover;
+
+            }
+    
+    
+            .quote{
+                position: relative;
+                min-height: 50px;
+                // background-color: seashell;
+                width: 100%;
+                padding-left: 20px;
+
+                p{
+                    &:last-of-type{
+                        margin-bottom: 25px;
+                    }
+                }
+
+                .client-name{
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    padding-right: -30px;
+
+                    p{
+                        font-family: proxCondense;
+                        font-size: 20px;
+                        color: $site-blue;
+                    }
+                }
+            }
+        }
+
+
+
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .about{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: -20  0px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .client-name{
+        position: relative;
+        margin-bottom: -30px;
+    }
+
+}

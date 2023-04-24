@@ -1,0 +1,54 @@
+.nav-holder {
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  margin-top: 30px;
+
+  nav {
+    max-width: $site-nav-width;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: $site-white solid 2px;
+
+    .title {
+      text-decoration: none;
+      background-image: url(../img/logo/logo-white.png);
+      background-repeat: no-repeat;
+      width: 92px;
+      height: 42px;
+    }
+    .links {
+      text-decoration: none;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      width: 500px;
+      align-self: center;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        color: $site-white;
+        text-decoration: none;
+        size: 15px;
+        margin: auto;
+      }
+
+      hr {
+        height: 21px;
+        width: 1px;
+        border-color: $site-blue;
+        margin: auto;
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    nav {
+      .title {
+        width: 0px;
+      }
+    }
+  }
+}

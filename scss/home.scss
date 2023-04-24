@@ -1,0 +1,201 @@
+.home{
+    .hero{
+        max-width: 100%; //also $site-width
+        height: $hero-height;
+        background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(../img/hero.jpg);
+        
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        color: white;
+        .callout{
+            margin-top: 100px;
+            width: 416px;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            text-align: center;
+
+            h1{
+                font-family:proxCondense;
+                margin-bottom: 22px;
+                font-size: 60px;
+            }
+
+            p{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin-bottom: 46px;
+                text-align:center;
+            }
+            span{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+                background-color: $site-blue;
+                padding: 9px 20px;
+                margin-bottom: 50px;
+            }
+
+        }
+    }
+    .promo{
+        max-width: 818px;
+        margin: -43px auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+        min-height: $tour-banner-height;
+        font-family:proxCondense;
+        span{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: $site-blue;
+            padding: 5px 15px;
+            margin-top: 50px;
+            border-radius: 25px;
+
+        }
+
+    }
+    .form-area{
+        max-width: 818px;
+        margin: 50px auto 0 auto;
+        min-height: $tour-banner-height;
+        h1{
+            font-family:proxCondense;
+            font-size: 60px;
+            font-style: italic;
+        }
+        
+        .form{
+            input{
+                height: 58px;
+                padding: 5px;
+                font-size: 18px;
+                border: solid $site-blue 1.5px;
+            }
+
+            .two-input{
+                flex-wrap: wrap;
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: space-between;
+                min-height: 58px;
+                .left{
+                    width: 344px;
+                    height: 58px;
+
+                }
+                .right{
+                    width: 453px;
+                    height: 58px;
+                  
+
+
+                }
+            }
+            .single-line-input-holder{
+                display: flex;
+                align-items: center;
+                justify-content: space-between; 
+                position: relative;
+                margin-bottom: 20px;
+                .large-input{
+                    width: 698px;
+                }
+                .icon{
+                    font-size: 24px;
+                    position: absolute;
+                    right: 30px;
+                }
+            }
+          .three-input{
+            position: relative;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            margin-bottom: 20px;
+            
+             
+                .sectioned{
+                    width: 103px;
+                    
+                }
+                
+                .fa-caret-down{
+                    font-size: 24px;
+                    position:relative;
+                    left: -65px;
+            }
+            }
+    
+.large-text{
+    display: flex;
+    justify-content: space-between; 
+    ::placeholder{
+        text-align:left;
+        vertical-align:text-top;
+    }
+        .para{
+         
+            width: 818px;
+            min-height: 192px;
+        }
+
+        }
+        .bigbutton{
+            max-width: 813px;
+        height: 58px;
+        border: $site-blue solid 2px;
+        border-radius: 40px;
+        background-color: $site-blue;
+        display: flex;
+        margin-top: 37px;
+        justify-content: center;
+        margin-bottom: 100px  ;
+
+               span{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                border-radius: 25px;
+                width: 818px;
+                margin: auto;
+                text-align: center;
+                background-color: $site-blue;
+                padding: 5px 15px;
+                color: $site-white;
+                }
+        }
+    }
+}
+//rememeber max width and min width
+//use percentages for it too
+//you cannot use both at once.
+
+}
+@media (max-width: 800px){
+    .home{
+        .form-area{
+            padding: 20px;
+            flex-direction: column;
+            align-items: center;
+            .three-input{
+                .sectioned{
+                    width: 50%;
+                }
+        }
+}
+}
+
+@media (max-width: 800px) {
+    .home{
+    
+        
+        .promo{
+            flex-direction: column;
+            align-items: center ;
+
+        }
+    }
+    }
+   
+}

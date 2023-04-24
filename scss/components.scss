@@ -1,0 +1,48 @@
+.background-props{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.tour-component{
+height: $tour-banner-height;
+width: $tour-banner-width;
+display: flex;
+    align-items: center;
+    justify-content: center;
+
+.info-holder{
+    color: $site-white;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+}
+
+.isreal-pic{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(26, 26, 26, 0.6)), url(../img/tour/tour-01.jpg);
+}
+.united-pic{
+    background-image:  linear-gradient(rgba(0,0,0,0.6),rgba(26, 26, 26, 0.6)),url(../img/tour/tour-02.jpg);
+}
+.Aus-pic{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(26, 26, 26, 0.6)),url(../img/tour/tour-03.jpg);
+}
+
+
+@media (max-width: 860px) {
+    .tour-component{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 600px) {
+    .tour-component{
+        margin-bottom: 70px;
+    }
+}

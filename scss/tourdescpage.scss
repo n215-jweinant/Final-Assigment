@@ -1,0 +1,112 @@
+.tours-header{
+    margin: 50px auto 0 auto;
+    max-width: 981px;
+    min-height: 413px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    h1{
+        font-family: proxCondense;
+        font-size: 80px;
+        color: $site-white;
+        margin-left: 30px;
+        position: absolute;
+    }
+
+    h2{
+        font-family: proxCondense;
+        font-size: 30px;
+        color: $site-white;
+        bottom: 0;
+        right: 0;
+        margin-left: 600px;
+        padding-top: 510px;
+    }
+}
+
+
+.tours-sub-header{
+    max-width: 1280px;
+    min-height: 347px;
+    margin: 50px auto 0px auto;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 130px;
+    padding-right: 130px;
+
+    .tours-sub-photo{
+        height: 347px;
+        width: 298px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.tours-days{
+    max-width: 981px;
+    margin: 50px auto 20px auto;
+
+    h1{
+        width: 171px;
+        border-bottom: black solid 2px;
+        font-size: 60px;
+        font-family: proxCondense;
+    }
+
+    p{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 16px;
+        margin-top: 36px;
+    }
+}
+
+.bookbutton{
+    margin: 56px auto 80px auto;
+    border-radius: 30px;
+    width: 121px;
+    height: 40px;
+    background-color: $site-blue;
+    display: flex;
+    justify-content: space-around;
+
+    p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: $site-white;
+        margin: auto;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1220px) {
+    .tours-sub-header{
+        width: 236px;
+        display: block;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        .tours-sub-photo{
+            margin-bottom: 20px;
+        }
+    }
+
+    .tours-header{
+        h2{
+            padding-left: 30px;
+        }
+    }
+
+    .tours-days{
+        h1{
+            padding-left: 20px;
+        }
+
+        p{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}

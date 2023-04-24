@@ -1,0 +1,62 @@
+    #black-nav{
+    max-width: 980px;
+    height: 60px;
+    margin: 30px auto 0px auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: black solid 2px;
+
+    p, a{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+    }
+
+    .title{
+        width: 92px; 
+        height: 42px;
+        background-image: url(../img/logo/logo-black.png);
+        
+        p{
+            margin: auto;
+            font-size: 20px;
+        }
+        
+
+
+    }
+
+    .links{
+        width: 500px;
+        height: 42px;
+        align-self: center;
+        display: flex;
+        justify-content: space-between;
+
+        a{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            text-decoration: none;
+            size: 15px;
+            margin: auto;
+        }
+
+        hr{
+            height: 21px;
+            width: 1px;
+            border-color: #79ADDC;
+            margin: auto;
+        }
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    #black-nav {
+        .title{
+            width: 0px;
+        }
+    }
+}
